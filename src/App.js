@@ -1,5 +1,5 @@
 import React from "react";
-
+import './index.css'
 import { useFormik } from "formik";
 
 function App() {
@@ -21,6 +21,8 @@ const formik = useFormik({
   },
 });
 return (
+
+  <div className="container">
 <div>
       <form onSubmit={formik.handleSubmit}>
         <div>Email:</div>
@@ -54,6 +56,7 @@ return (
           Submit
         </button>
       </form>
+    </div>
     </div>
   );
 }
